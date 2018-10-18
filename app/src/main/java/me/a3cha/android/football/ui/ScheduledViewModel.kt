@@ -1,4 +1,4 @@
-package me.a3cha.android.football.scheduled
+package me.a3cha.android.football.ui
 
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
