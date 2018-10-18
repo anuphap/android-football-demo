@@ -49,3 +49,6 @@ captures/
 # Google Services (e.g. APIs or Firebase)
 google-services.json
 
+# Hide
+app/src/main/java/me/a3cha/android/football/app/Constants.kt
+

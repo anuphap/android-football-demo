@@ -15,7 +15,7 @@ import me.a3cha.android.football.extension.formatter
  */
 
 class ScheduledAdapter : RecyclerView.Adapter<ScheduledAdapter.ScheduledViewHolder>() {
-    var matches = arrayListOf<MatchGame>()
+    var matches = listOf<MatchGame>()
         set(value) {
             field = value
             notifyDataSetChanged()
