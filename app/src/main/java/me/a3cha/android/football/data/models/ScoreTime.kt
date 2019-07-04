@@ -8,4 +8,7 @@ import android.arch.persistence.room.Entity
  */
 
 @Entity
-data class ScoreTime(var homeTeam: Int = 0, var awayTeam: Int = 0)
+data class ScoreTime(
+    var homeTeam: Int,
+    var awayTeam: Int
+)

@@ -4,6 +4,7 @@ import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import com.google.gson.GsonBuilder
 import me.a3cha.android.football.app.Constants
+import me.a3cha.android.football.data.local.Competition
 import me.a3cha.android.football.data.models.MatchGame
 import me.a3cha.android.football.data.models.Schedule
 import okhttp3.OkHttpClient
@@ -54,7 +55,7 @@ class FootballRemoteData : FootballRemoteDataSource {
     override fun loadMatches(): LiveData<List<MatchGame>> {
         val data = MutableLiveData<List<MatchGame>>()
 
-        footballService.getSchedules("PL").enqueue(object : Callback<Schedule> {
+        footballService.getSchedules(Competition.PREMIER_LEAGUE).enqueue(object : Callback<Schedule> {
             override fun onFailure(call: Call<Schedule>, t: Throwable) {
 
             }
